@@ -8,14 +8,28 @@
 //? L'output del prezzo finale va messo fuori in forma umana in pagina (con massimo due decimali, per indicare centesimi sul prezzo).
 
 
+// * numero di chilometri che vuole percorrere e l'età del passeggero.
 let  userkilometers = parseInt(prompt ('Insert kilometers'));
-
 
 let userAge = parseInt(prompt ('Insert your age'));
 
 const adult = 18;
 
 const major = 65;
+
+// ! calcolo prezzo biglietto
+let kmPrice = Math.floor( userkilometers * 0.21);
+console.log(kmPrice);
+
+
+
+
+// ? const underagediscount = 20%
+
+//? const majordiscount = 40%
+
+
+
 
 if(userAge >= adult){
     console.log('You are adult');
@@ -32,7 +46,7 @@ if ((userAge >= 18) && (userAge < 65)){
 
 
 
-// ? console.log((userAge >= 18) && (userAge <65))
+
 
 // ? let UserInfo =;
 
