@@ -14,7 +14,6 @@ let  userkilometers = parseInt(prompt ('Insert kilometers'));
 
 let userAge = parseInt(prompt ('Insert kilometers'));
 
-let userFavColor = prompt ('Insert your favourite color');
 
 let UserInfo =;
 
