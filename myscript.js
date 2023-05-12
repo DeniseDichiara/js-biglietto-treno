@@ -13,21 +13,22 @@ let  userkilometers = parseInt(prompt ('Insert kilometers'));
 
 let userAge = parseInt(prompt ('Insert your age'));
 
-const adult = 18
+const adult = 18;
 
-const major = 65
+const major = 65;
 
 if(userAge >= adult){
     console.log('You are adult');
 }else if(userAge < adult){
     console.log('You are not adult');
-}else if (userAge < major){
+}
+if ((userAge >= 18) && (userAge < 65)){
     console.log('You are not major');
 }
 
 
 
-
+// ? console.log((userAge >= 18) && (userAge <65))
 
 // ? let UserInfo =;
 
