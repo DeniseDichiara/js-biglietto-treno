@@ -14,6 +14,14 @@ let  userkilometers = parseInt(prompt ('Insert kilometers'));
 
 let userAge = parseInt(prompt ('Insert kilometers'));
 
+const adult = 18
+
+const major = 65
+
+if()
+
+
+
 
 let UserInfo =;
 
