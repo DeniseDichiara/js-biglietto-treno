@@ -26,6 +26,8 @@ if ((userAge >= 18) && (userAge < 65)){
     console.log('You are not major');
 }else if ((userAge >= 65) && (userAge > 65)){
     console.log('You are major');
+}else if (isNaN(userAge)|| isNaN(userkilometers)){
+    console.log('ERROR');
 }
 
 
