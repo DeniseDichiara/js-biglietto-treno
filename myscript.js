@@ -11,17 +11,22 @@
 let  userkilometers = parseInt(prompt ('Insert kilometers'));
 
 
-let userAge = parseInt(prompt ('Insert your agexd'));
+let userAge = parseInt(prompt ('Insert your age'));
 
 const adult = 18
 
 const major = 65
 
-// ? if()
+if(userAge >= adult){
+    console.log('You are adult');
+}else if(userAge < adult){
+    console.log('You are not adult');
+}
+
 
 
 
 
 // ? let UserInfo =;
 
-document.getElementById('ticket-price') .innerHTML = UserInfo;
+// ? document.getElementById('ticket-price') .innerHTML = UserInfo;
