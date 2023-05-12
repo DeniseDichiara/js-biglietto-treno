@@ -21,6 +21,8 @@ if(userAge >= adult){
     console.log('You are adult');
 }else if(userAge < adult){
     console.log('You are not adult');
+}else if (userAge < major){
+    console.log('You are not major');
 }
 
 
