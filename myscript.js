@@ -21,10 +21,10 @@ const major = 65;
 let kmPrice = Math.floor( userkilometers * 0.21);
 console.log(kmPrice);
 
+//? va applicato uno sconto del 20% per i minorenni
 
-
-
-// ? const underagediscount = 20%
+const underagediscount = Math.floor (kmPrice -(( 20 / 100)* kmPrice));
+console.log(underagediscount);
 
 //? const majordiscount = 40%
 
@@ -44,6 +44,11 @@ if ((userAge >= 18) && (userAge < 65)){
     console.log('ERROR');
 }
 
+//? Se utente < 18 allora sconto del 20% ----> if (userAge < 18) allora applica  underagediscount else prezzo pieno
+
+// *Se utente >= 18 && < 65 prezzo pieno
+
+// ! Se utente >= 65 ----> majordiscount
 
 
 
