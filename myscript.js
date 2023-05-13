@@ -27,17 +27,15 @@ const majordiscount = Math.floor (kmPrice - (( 40 / 100)* kmPrice));
 
 if(userAge < 18){
     console.log('You are young');
-    document.getElementById('ticket-price') .innerHTML = underagediscount
+    document.getElementById('ticket-price') .innerHTML = underagediscount + ' €'
 }else if((userAge >= 18) && (userAge < 65)){
     console.log('You are adult');
-    document.getElementById('ticket-price') .innerHTML = kmPrice
+    document.getElementById('ticket-price') .innerHTML = kmPrice + ' €'
 }else if(userAge >=65){
     console.log('You are major');
-    document.getElementById('ticket-price') .innerHTML = majordiscount
+    document.getElementById('ticket-price') .innerHTML = majordiscount + ' €'
 }else if (isNaN(userAge)|| isNaN(userkilometers)){
     console.log('ERROR');
 }
 
-
-
-// ? document.getElementById('ticket-price') .innerHTML = 
+//? toFixed(2)
