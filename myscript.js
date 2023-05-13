@@ -27,15 +27,22 @@ const majordiscount = Math.floor (kmPrice - (( 40 / 100)* kmPrice));
 
 if(userAge < 18){
     console.log('You are young');
-    document.getElementById('ticket-price') .innerHTML = underagediscount + ' €'
+    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(underagediscount).toFixed(2) + ' €' ;
 }else if((userAge >= 18) && (userAge < 65)){
     console.log('You are adult');
-    document.getElementById('ticket-price') .innerHTML = kmPrice + ' €'
+    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(kmPrice).toFixed(2) + ' €' ;
 }else if(userAge >=65){
     console.log('You are major');
-    document.getElementById('ticket-price') .innerHTML = majordiscount + ' €'
+    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(majordiscount).toFixed(2) + ' €' ;
 }else if (isNaN(userAge)|| isNaN(userkilometers)){
     console.log('ERROR');
 }
 
 //? toFixed(2)
+
+//? function financial(x) {
+//? return Number.parseFloat(x).toFixed(2);
+//? }
+
+//? console.log(financial(123.456));
+// Expected output: "123.46"
