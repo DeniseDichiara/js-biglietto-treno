@@ -13,46 +13,27 @@ let  userkilometers = parseInt(prompt ('Insert kilometers'));
 
 let userAge = parseInt(prompt ('Insert your age'));
 
-const adult = 18;
-
-const major = 65;
 
 // ! calcolo prezzo biglietto
 let kmPrice = Math.floor( userkilometers * 0.21);
-console.log(kmPrice);
-
-//? va applicato uno sconto del 20% per i minorenni
-
-const underagediscount = Math.floor (kmPrice -(( 20 / 100)* kmPrice));
-console.log(underagediscount);
-
-//? const majordiscount = 40%
 
 
+//? Sconto del 20% per i minorenni
+const underagediscount = Math.floor (kmPrice - (( 20 / 100)* kmPrice));
 
 
-if(userAge >= adult){
+//TODO Sconto del 40% per chi ha più di 65 anni
+const majordiscount = Math.floor (kmPrice - (( 40 / 100)* kmPrice));
+
+if(userAge < 18){
+    console.log('You are young');
+    underagediscount
+}else if((userAge >= 18) && (userAge < 65)){
     console.log('You are adult');
-}else if(userAge < adult){
-    console.log('You are not adult');
-}
-if ((userAge >= 18) && (userAge < 65)){
-    console.log('You are not major');
-}else if ((userAge >= 65) && (userAge > 65)){
+    kmPrice
+}else if(userAge >=65){
     console.log('You are major');
+    majordiscount
 }else if (isNaN(userAge)|| isNaN(userkilometers)){
     console.log('ERROR');
 }
-
-//? Se utente < 18 allora sconto del 20% ----> if (userAge < 18) allora applica  underagediscount else prezzo pieno
-
-// *Se utente >= 18 && < 65 prezzo pieno
-
-// ! Se utente >= 65 ----> majordiscount
-
-
-
-
-// ? let UserInfo =;
-
-// ? document.getElementById('ticket-price') .innerHTML = UserInfo;
