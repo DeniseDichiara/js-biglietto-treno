@@ -37,12 +37,3 @@ if(userAge < 18){
 }else if (isNaN(userAge)|| isNaN(userkilometers)){
     console.log('ERROR');
 }
-
-//? toFixed(2)
-
-//? function financial(x) {
-//? return Number.parseFloat(x).toFixed(2);
-//? }
-
-//? console.log(financial(123.456));
-// Expected output: "123.46"
