@@ -9,7 +9,7 @@
 
 
 // * numero di chilometri che vuole percorrere e l'età del passeggero.
-let  userkilometers = parseInt(prompt ('Insert kilometers'));
+let  userkilometers = parseInt(prompt ('Enter the kilometers of your destination:'));
 
 let userAge = parseInt(prompt ('Insert your age'));
 
@@ -27,13 +27,13 @@ const majordiscount = Math.floor (kmPrice - (( 40 / 100)* kmPrice));
 
 if(userAge < 18){
     console.log('You are young');
-    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(underagediscount).toFixed(2) + ' €' ;
+    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(underagediscount).toFixed(2) + ' €      Have a nice trip! (The underage discount has been applied)' ;
 }else if((userAge >= 18) && (userAge < 65)){
     console.log('You are adult');
-    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(kmPrice).toFixed(2) + ' €' ;
+    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(kmPrice).toFixed(2) + ' €  Have a nice trip!' ;
 }else if(userAge >=65){
     console.log('You are major');
-    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(majordiscount).toFixed(2) + ' €' ;
+    document.getElementById('ticket-price') .innerHTML = Number.parseFloat(majordiscount).toFixed(2) + ' €  Have a nice trip! (The major discount has been applied)' ;
 }else if (isNaN(userAge)|| isNaN(userkilometers)){
     console.log('ERROR');
 }
